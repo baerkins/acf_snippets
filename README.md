@@ -59,6 +59,7 @@ if(get_field('*field_name*')) : ?>
 
 ### Options Page Field Snippets
 *These snippets are the same as the standard and repeater snippets, but with an 'o' appended to the end.*
+
 |Snippet|Output|
 |-------|------|
 | `tfo` | `the_field('*field_name*', 'options'); ?>` |
