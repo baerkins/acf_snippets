@@ -14,11 +14,11 @@ Mac users: Library/Application Support/Sublime Text 2/Packages
 
 Snippets are described by `tabTrigger` - `codeOutput`. 
 
-To make things the easiest to remember, snippets are typically named as abbreviations for their output. For example, `tf` outputs a **t**he_**f**ield code snippet.
+To make things the easiest to remember, snippet triggers are typically named as abbreviations for their output. For example, `tf` outputs **t**he_**f**ield.
 
 Field names and variable outputs that are auto-highlighted for replacement by Sublime Text are shown in the code wrapped in asterisks.
 
-*Note: All snippets need to be triggered within an open `<?php1` tag. Once triggered, the snippet will close out the tag with ` ?>`.*
+*Note: All snippets need to be triggered within an open* `<?php1` *tag. Once triggered, the snippet will close out the tag with* ` ?>`.
 
 ### Standard Field Snippets
 - `tf` - `the_field('*field_name*'); ?>`
