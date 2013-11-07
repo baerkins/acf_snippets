@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+\$attachment_id = get_field('${1:field_name}', 'options');
+\$size = "${2:full}";
+\$image = wp_get_attachment_image_src( \$attachment_id, \$size ); 
+?>
+
+<img src="<?php echo \$image[0]; ?>" />
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>imgfo</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
