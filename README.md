@@ -27,7 +27,7 @@ Field names and variable outputs that are auto-highlighted for replacement by Su
 | `iftf` | `if_the_field('*field_name*'); ?>` |
 | `gf` | `get_field('*field_name*'); ?>` |
 | `ifgf` | `if_get_field('*field_name*'); ?>` |
-| `imgf` | Outputs a block of code for an Image ID field:
+| `imgf` | Outputs a block of code for an Image ID field:|
 
 ```php
   $attachment_id = get_field('*field_name*');
@@ -36,7 +36,7 @@ Field names and variable outputs that are auto-highlighted for replacement by Su
 
 <img src="<?php echo \$image[0]; ?>" />
 ```
-|
+
 
 ### Repeater Field Snippets
 |Snippet|Output|
@@ -44,7 +44,7 @@ Field names and variable outputs that are auto-highlighted for replacement by Su
 | `tsf` | `the_sub_field('*field_name*'); ?>` |
 | `whsf` | `while(has_sub_field('*field_name*')) : ?>` |
 | `ifgsf` | `if(get_sub_field('*field_name*')) : ?>` |
-| `rf` | Outputs a block of repeater field code: 
+| `rf` | Outputs a block of repeater field code: |
 
 ```php
 if(get_field('*field_name*')) : ?>
@@ -55,7 +55,7 @@ if(get_field('*field_name*')) : ?>
   </*ul*>
 <?php endif; ?>
 ```
-|
+
 
 ### Options Page Field Snippets
 *These snippets are the same as the standard and repeater snippets, but with an 'o' appended to the end.*
