@@ -33,7 +33,8 @@ Field names and variable outputs that are auto-highlighted for replacement by Su
 - `whsf` - `while(has_sub_field('*field_name*')) : ?>`
 - `ifgsf` - `if(get_sub_field('*field_name*')) : ?>`
 - `rf` - Outputs a block of repeater field code:
-```
+
+```php
 if(get_field('*field_name*')) : ?>
   <*ul*>
     <?php while(has_sub_field('*field_name*')) : ?>
@@ -50,7 +51,8 @@ if(get_field('*field_name*')) : ?>
 - `gfo` - `get_field('*field_name*', 'options'); ?>`
 - `ifgfo` - `if_get_field('*field_name*'); ?>`
 - `imgfo` - Outputs a block of code for an Image ID field from the options page:
-```
+
+```php
   $attachment_id = get_field('*field_name*');
   $size = "*full*";
   $image = wp_get_attachment_image_src( $attachment_id, $size ); ?>
@@ -60,7 +62,8 @@ if(get_field('*field_name*')) : ?>
 -  `tsfo` - `the_sub_field('*field_name*', 'options'); ?>`
 -  `whsfo` - `while(has_sub_field('*field_name*', 'options')) : ?>`
 - `rfo` - Outputs a block of repeater field code from the options page:
-```
+
+```php
 if(get_field('*field_name*', 'options')) : ?>
   <*ul*>
     <?php while(has_sub_field('*field_name*', 'options')) : ?>
