@@ -66,7 +66,7 @@ if(get_field('*field_name*')) : ?>
 | `iftfo` | `if_the_field('*field_name*', 'options'); ?>` |
 | `gfo` | `get_field('*field_name*', 'options'); ?>` |
 | `ifgfo` | `if_get_field('*field_name*'); ?>` |
-| `imgfo` | Outputs a block of code for an Image ID field from the options page:
+| `imgfo` | Outputs a block of code for an Image ID field from the options page:|
 
 ```php
   $attachment_id = get_field('*field_name*');
@@ -75,12 +75,13 @@ if(get_field('*field_name*')) : ?>
 
 <img src="<?php echo \$image[0]; ?>" />
 ```
-|
+
+
 
 |  `tsfo` | `the_sub_field('*field_name*', 'options'); ?>` |
 |  `whsfo` | `while(has_sub_field('*field_name*', 'options')) : ?>` |
 | `ifgsfo` | `if(get_sub_field('*field_name*', 'options')) : ?>` |
-| `rfo` | Outputs a block of repeater field code from the options page:
+| `rfo` | Outputs a block of repeater field code from the options page:|
 
 ```php
 if(get_field('*field_name*', 'options')) : ?>
@@ -91,4 +92,3 @@ if(get_field('*field_name*', 'options')) : ?>
   </*ul*>
 <?php endif; ?>
 ```
-|
