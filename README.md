@@ -1,7 +1,14 @@
 Advanced Custom Fields Snippets for Sublime Text
 ================================================
 
-Sublime Text snippets for the [Advanced Custom Fields](http://www.advancedcustomfields.com/) Wordpress plugin.
+This is a collection of Sublime Text snippets for the [Advanced Custom Fields](http://www.advancedcustomfields.com/) Wordpress plugin.
+
+## Usage
+
+Copy this folder to the `Packages` folder of your Sublime Text installation.
+
+Mac users: Library/Application Support/Sublime Text 2/Packages
+Mac users: Library/Application Support/Sublime Text 2/Packages
 
 ## Snippets 
 
