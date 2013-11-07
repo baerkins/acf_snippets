@@ -77,7 +77,8 @@ if(get_field('*field_name*')) : ?>
 ```
 
 
-
+|Snippet|Output|
+|-------|------|
 |  `tsfo` | `the_sub_field('*field_name*', 'options'); ?>` |
 |  `whsfo` | `while(has_sub_field('*field_name*', 'options')) : ?>` |
 | `ifgsfo` | `if(get_sub_field('*field_name*', 'options')) : ?>` |
