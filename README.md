@@ -21,6 +21,8 @@ Field names and variable outputs that are auto-highlighted for replacement by Su
 *Note: All snippets need to be triggered within an open* `<?php1` *tag. Once triggered, the snippet will close out the tag with* ` ?>`.
 
 ### Standard Field Snippets
+|Snippet|Output|
+|-------|------|
 | `tf` | `the_field('*field_name*'); ?>` |
 | `iftf` | `if_the_field('*field_name*'); ?>` |
 | `gf` | `get_field('*field_name*'); ?>` |
@@ -37,6 +39,8 @@ Field names and variable outputs that are auto-highlighted for replacement by Su
 |
 
 ### Repeater Field Snippets
+|Snippet|Output|
+|-------|------|
 | `tsf` | `the_sub_field('*field_name*'); ?>` |
 | `whsf` | `while(has_sub_field('*field_name*')) : ?>` |
 | `ifgsf` | `if(get_sub_field('*field_name*')) : ?>` |
@@ -55,6 +59,8 @@ if(get_field('*field_name*')) : ?>
 
 ### Options Page Field Snippets
 *These snippets are the same as the standard and repeater snippets, but with an 'o' appended to the end.*
+|Snippet|Output|
+|-------|------|
 | `tfo` | `the_field('*field_name*', 'options'); ?>` |
 | `iftfo` | `if_the_field('*field_name*', 'options'); ?>` |
 | `gfo` | `get_field('*field_name*', 'options'); ?>` |
