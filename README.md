@@ -21,11 +21,11 @@ Field names and variable outputs that are auto-highlighted for replacement by Su
 *Note: All snippets need to be triggered within an open* `<?php1` *tag. Once triggered, the snippet will close out the tag with* ` ?>`.
 
 ### Standard Field Snippets
-- `tf` - `the_field('*field_name*'); ?>`
-- `iftf` - `if_the_field('*field_name*'); ?>`
-- `gf` - `get_field('*field_name*'); ?>`
-- `ifgf` - `if_get_field('*field_name*'); ?>`
-- `imgf` - Outputs a block of code for an Image ID field:
+| `tf` | `the_field('*field_name*'); ?>` |
+| `iftf` | `if_the_field('*field_name*'); ?>` |
+| `gf` | `get_field('*field_name*'); ?>` |
+| `ifgf` | `if_get_field('*field_name*'); ?>` |
+| `imgf` | Outputs a block of code for an Image ID field:
 
 ```php
   $attachment_id = get_field('*field_name*');
@@ -34,12 +34,13 @@ Field names and variable outputs that are auto-highlighted for replacement by Su
 
 <img src="<?php echo \$image[0]; ?>" />
 ```
+|
 
 ### Repeater Field Snippets
-- `tsf` - `the_sub_field('*field_name*'); ?>`
-- `whsf` - `while(has_sub_field('*field_name*')) : ?>`
-- `ifgsf` - `if(get_sub_field('*field_name*')) : ?>`
-- `rf` - Outputs a block of repeater field code:
+| `tsf` | `the_sub_field('*field_name*'); ?>` |
+| `whsf` | `while(has_sub_field('*field_name*')) : ?>` |
+| `ifgsf` | `if(get_sub_field('*field_name*')) : ?>` |
+| `rf` | Outputs a block of repeater field code: 
 
 ```php
 if(get_field('*field_name*')) : ?>
@@ -50,14 +51,15 @@ if(get_field('*field_name*')) : ?>
   </*ul*>
 <?php endif; ?>
 ```
+|
 
 ### Options Page Field Snippets
 *These snippets are the same as the standard and repeater snippets, but with an 'o' appended to the end.*
-- `tfo` - `the_field('*field_name*', 'options'); ?>`
-- `iftfo` - `if_the_field('*field_name*', 'options'); ?>`
-- `gfo` - `get_field('*field_name*', 'options'); ?>`
-- `ifgfo` - `if_get_field('*field_name*'); ?>`
-- `imgfo` - Outputs a block of code for an Image ID field from the options page:
+| `tfo` | `the_field('*field_name*', 'options'); ?>` |
+| `iftfo` | `if_the_field('*field_name*', 'options'); ?>` |
+| `gfo` | `get_field('*field_name*', 'options'); ?>` |
+| `ifgfo` | `if_get_field('*field_name*'); ?>` |
+| `imgfo` | Outputs a block of code for an Image ID field from the options page:
 
 ```php
   $attachment_id = get_field('*field_name*');
@@ -66,10 +68,12 @@ if(get_field('*field_name*')) : ?>
 
 <img src="<?php echo \$image[0]; ?>" />
 ```
--  `tsfo` - `the_sub_field('*field_name*', 'options'); ?>`
--  `whsfo` - `while(has_sub_field('*field_name*', 'options')) : ?>`
-- `ifgsfo` - `if(get_sub_field('*field_name*', 'options')) : ?>`
-- `rfo` - Outputs a block of repeater field code from the options page:
+|
+
+|  `tsfo` | `the_sub_field('*field_name*', 'options'); ?>` |
+|  `whsfo` | `while(has_sub_field('*field_name*', 'options')) : ?>` |
+| `ifgsfo` | `if(get_sub_field('*field_name*', 'options')) : ?>` |
+| `rfo` | Outputs a block of repeater field code from the options page:
 
 ```php
 if(get_field('*field_name*', 'options')) : ?>
@@ -80,3 +84,4 @@ if(get_field('*field_name*', 'options')) : ?>
   </*ul*>
 <?php endif; ?>
 ```
+|
