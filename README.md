@@ -18,7 +18,7 @@ To make things the easiest to remember, snippet triggers are typically named as 
 
 Field names and variable outputs that are auto-highlighted for replacement by Sublime Text are shown in the code wrapped in asterisks.
 
-*Note: All snippets need to be triggered within an open* `<?php1` *tag. Once triggered, the snippet will close out the tag with* ` ?>`.
+*Note: All snippets need to be triggered within an open* `<?php` *tag. Once triggered, the snippet will close out the tag with* ` ?>`.
 
 ### Standard Field Snippets
 |Snippet|Output|
