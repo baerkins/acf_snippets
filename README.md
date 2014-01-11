@@ -56,6 +56,33 @@ if(get_field('*field_name*')) : ?>
 <?php endif; ?>
 ```
 
+### Flexible Field Snippets
+|Snippet|Output|
+|-------|------|
+| `ffall` | Outputs a complete block (think _all_ of the code) of a flexible field statement: |
+
+```php
+if(get_field('*field_name*')) :
+	// Layout Name: *Layout Type*
+	while(has_sub_field('*Layout_name*')) : ?>
+		*<div>*
+			<?php the_sub_field('*field_name*'); ?>
+		*</div>*
+	<?php endwhile; ?>
+<?php endif; ?>
+```
+|Snippet|Output|
+|-------|------|
+| `ffpart` | Outputs only a new layout portion (think _part_ of the code) of a flexible field statement : |
+
+```php
+
+	// Layout Name: *Layout Type*
+	while(has_sub_field('*Layout_name*')) : ?>
+		*<div>*
+			<?php the_sub_field('*field_name*'); ?>
+		*</div>*
+```
 
 ### Options Page Field Snippets
 *These snippets are the same as the standard and repeater snippets, but with an 'o' appended to the end.*
