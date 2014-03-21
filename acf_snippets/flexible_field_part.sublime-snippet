@@ -2,7 +2,7 @@
 	<content><![CDATA[
 	
 
-	// Layout Name: ${2:layout_name}
+	// Layout Name: ${1:layout_name}
 	while(has_sub_field('${2:layout_name}')) : ?>
 		${3:<div>}
 			<?php the_sub_field('${4:<div>}'); ?>
