@@ -1,12 +1,13 @@
 <snippet>
 	<content><![CDATA[
 	
-
-	// Layout Name: ${1:layout_name}
-	while(has_sub_field('${2:layout_name}')) : ?>
-		${3:<div>}
-			<?php the_sub_field('${4:<div>}'); ?>
-		${3:</div>}	
+	<?php 
+	// Layout Name: ${2:layout_name}
+	elseif( get_row_layout() == '${2:layout_field}' ): ?>
+		${4:<div>}
+			<?php the_sub_field('${5:<div>}'); ?>
+		${4:</div>}
+		
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>ffpart</tabTrigger>

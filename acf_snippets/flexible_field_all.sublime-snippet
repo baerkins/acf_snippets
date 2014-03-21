@@ -1,11 +1,17 @@
 <snippet>
 	<content><![CDATA[
-if(get_field('${1:field_name}')) :
-	// Layout Name: ${2:layout_type}
-	while(has_sub_field('${3:layout_name}')) : ?>
-		${4:<div>}
-			<?php the_sub_field('${5:<div>}'); ?>
-		${4:</div>}	
+if( have_rows('${1:field_name}')): :
+	while ( have_rows('${1:field_name}') ) : the_row(); ?>
+
+		<?php
+
+		// Layout Name: ${2:layout_name}
+		if( get_row_layout() == '${2:layout_field}' ): ?>
+			${4:<div>}
+				<?php the_sub_field('${5:<div>}'); ?>
+			${4:</div>}
+
+		<?php endif; ?>
 	<?php endwhile; ?>
 <?php endif; ?>
 ]]></content>
