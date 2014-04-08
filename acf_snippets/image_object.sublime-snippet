@@ -1,12 +1,12 @@
 <snippet>
 	<content><![CDATA[
 // ACF Image Object
-\$image = get_field('image');
-\$url = $image['url'];
-\$alt = $image['alt'];
-\$imageLarge = $image['sizes'][ '${1:large}' ]; ?>
+\$image = get_field('${1:field_name}');
+\$url = \$image['url'];
+\$alt = \$image['alt'];
+\$imageSize = $image['sizes'][ '${2:large}' ]; ?>
 
-<img src="<?php echo \$imageLarge; ?>" alt="<?php echo \$alt; ?>" />
+<img src="<?php echo \$imageSize; ?>" alt="<?php echo \$alt; ?>" />
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

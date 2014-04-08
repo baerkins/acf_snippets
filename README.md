@@ -36,14 +36,30 @@ Field names and variable outputs that are auto-highlighted for replacement by Su
 
 <img src="<?php echo \$image[0]; ?>" />
 ```
+|Snippet|Output|
+|-------|------|
+| `imgobj` | Outputs a block of code for an Image Object field:|
 
+```php
+// ACF Image Object
+$image = get_field('*field_name*');
+$url = $image['url'];
+$alt = $image['alt'];
+$imageSize = $image['sizes'][ '*large*' ]; ?>
 
-### Repeater Field Snippets
+<img src="<?php echo $imageSize; ?>" alt="<?php echo $alt; ?>" />
+```
+
+### Sub Field Snippets
 |Snippet|Output|
 |-------|------|
 | `tsf` | `the_sub_field('*field_name*'); ?>` |
 | `whsf` | `while(has_sub_field('*field_name*')) : ?>` |
 | `ifgsf` | `if(get_sub_field('*field_name*')) : ?>` |
+
+### Repeater Field Snippets
+|Snippet|Output|
+|-------|------|
 | `rf` | Outputs a block of repeater field code: |
 
 ```php
@@ -62,26 +78,33 @@ if(get_field('*field_name*')) : ?>
 | `ffall` | Outputs a complete block (think _all_ of the code) of a flexible field statement: |
 
 ```php
-if(get_field('*field_name*')) :
-	// Layout Name: *Layout Type*
-	while(has_sub_field('*Layout_name*')) : ?>
-		*<div>*
-			<?php the_sub_field('*field_name*'); ?>
-		*</div>*
+// Start Flexible Content
+if( have_rows('${1:field_name}')): :
+	while ( have_rows('${1:field_name}') ) : the_row(); ?>
+
+		<?php
+
+		// Layout Name: ${2:layout_name}
+		if( get_row_layout() == '${2:layout_field}' ): ?>
+			${4:<div>}
+				<?php the_sub_field('${5:<div>}'); ?>
+			${4:</div>}
+
+		<?php endif; ?>
 	<?php endwhile; ?>
 <?php endif; ?>
 ```
+
 |Snippet|Output|
 |-------|------|
 | `ffpart` | Outputs only a new layout portion (think _part_ of the code) of a flexible field statement : |
 
 ```php
-
-	// Layout Name: *Layout Type*
-	while(has_sub_field('*Layout_name*')) : ?>
-		*<div>*
-			<?php the_sub_field('*field_name*'); ?>
-		*</div>*
+	// Layout Name: ${2:layout_name}
+	elseif( get_row_layout() == '${2:layout_field}' ): ?>
+		${4:<div>}
+			<?php the_sub_field('${5:<div>}'); ?>
+		${4:</div>}
 ```
 
 ### Options Page Field Snippets

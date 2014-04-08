@@ -1,15 +1,9 @@
 <snippet>
 	<content><![CDATA[
-
-	// Layout Name: ${2:layout_name}
-	elseif( get_row_layout() == '${2:layout_field}' ): ?>
-		${4:<div>}
-			<?php the_sub_field('${5:<div>}'); ?>
-		${4:</div>}
-
+get_sub_field('${1:field_name}', 'options'); ?>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>ffpart</tabTrigger>
+	<tabTrigger>gsfo</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.php</scope>
 </snippet>

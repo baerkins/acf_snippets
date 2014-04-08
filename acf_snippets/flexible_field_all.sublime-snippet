@@ -1,5 +1,6 @@
 <snippet>
 	<content><![CDATA[
+// Start Flexible Content
 if( have_rows('${1:field_name}')): :
 	while ( have_rows('${1:field_name}') ) : the_row(); ?>
 
