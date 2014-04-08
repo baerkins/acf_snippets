@@ -7,14 +7,13 @@ This is a collection of Sublime Text snippets for the [Advanced Custom Fields](h
 
 Copy this folder to the `Packages` folder of your Sublime Text installation.
 
-Mac users: Library/Application Support/Sublime Text 2/Packages
-Mac users: Library/Application Support/Sublime Text 2/Packages
+Mac users: Library/Application Support/Sublime Text/Packages
 
 ## Snippets 
 
 Snippets are described by `tabTrigger` - `codeOutput`. 
 
-To make things the easiest to remember, snippet triggers are typically named as abbreviations for their output. For example, `tf` outputs **t**he_**f**ield.
+To make things the easiest to remember, snippet triggers are typically named as abbreviations for their output. For example, `tf` outputs (T)he (F)ield.
 
 Field names and variable outputs that are auto-highlighted for replacement by Sublime Text are shown in the code wrapped in asterisks.
 
