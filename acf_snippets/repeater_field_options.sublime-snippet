@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-if(get_field('${1:field_name}', 'options')) : ?>
+if(have_rows('${1:field_name}', 'options')) : ?>
 	<${2:ul}>
-		<?php while(has_sub_field('${1:field_name}', 'options')) : ?>
+		<?php while(have_rows('${1:field_name}', 'options')) : ?>
 			<${3:li}><?php the_sub_field('${4:sub_field_name}'); ?></${3:li}>
 		<?php endwhile; ?>
 	</${2:ul}>
