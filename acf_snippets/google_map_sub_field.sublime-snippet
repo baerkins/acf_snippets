@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+    \$location = get_sub_field('${1:field_name}');
+    if( !empty($location) ): ?>
+
+    <div class="acf-map">
+      <div class="marker" data-lat="<?php echo \$location['lat']; ?>" data-lng="<?php echo \$location['lng']; ?>"></div>
+    </div>
+
+    <?php endif; ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gmfo</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
