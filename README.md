@@ -65,7 +65,7 @@ $imageSize = $image['sizes'][ '*large*' ]; ?>
 if(get_field('*field_name*')) : ?>
   <*ul*>
     <?php while(has_sub_field('*field_name*')) : ?>
-      <*li*><?php the_sub_field(*sub_field_name*); ?></*li*>
+      <*li*><?php the_sub_field(‘*sub_field_name*’); ?></*li*>
     <?php endwhile;>
   </*ul*>
 <?php endif; ?>
@@ -78,16 +78,16 @@ if(get_field('*field_name*')) : ?>
 
 ```php
 // Start Flexible Content
-if( have_rows('${1:field_name}')): :
-	while ( have_rows('${1:field_name}') ) : the_row(); ?>
+if( have_rows(‘*field_name*’)): :
+	while ( have_rows(‘*field_name*’) ) : the_row(); ?>
 
 		<?php
 
-		// Layout Name: ${2:layout_name}
-		if( get_row_layout() == '${2:layout_field}' ): ?>
-			${4:<div>}
-				<?php the_sub_field('${5:<div>}'); ?>
-			${4:</div>}
+		// Layout Name: *layout_name*
+		if( get_row_layout() == ‘*layout_field*’ ): ?>
+			<*div*>
+				<?php the_sub_field(‘*field_name*’); ?>
+			</*div*>
 
 		<?php endif; ?>
 	<?php endwhile; ?>
@@ -99,11 +99,11 @@ if( have_rows('${1:field_name}')): :
 | `ffpart` | Outputs only a new layout portion (think _part_ of the code) of a flexible field statement : |
 
 ```php
-	// Layout Name: ${2:layout_name}
-	elseif( get_row_layout() == '${2:layout_field}' ): ?>
-		${4:<div>}
-			<?php the_sub_field('${5:<div>}'); ?>
-		${4:</div>}
+	// Layout Name: *layout_name*
+	elseif( get_row_layout() == ‘*layout_field*’ ): ?>
+		<*div*>
+			<?php the_sub_field(‘*field_name*’); ?>
+		</*div*>
 ```
 
 ### Options Page Field Snippets
