@@ -1,5 +1,6 @@
 <snippet>
 	<content><![CDATA[
+    // ACF Google Map
     \$location = get_field('${1:field_name}');
     if( !empty($location) ): ?>
 

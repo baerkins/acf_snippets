@@ -9,9 +9,9 @@ Copy this folder to the `Packages` folder of your Sublime Text installation.
 
 Mac users: Library/Application Support/Sublime Text/Packages
 
-## Snippets 
+## Snippets
 
-Snippets are described by `tabTrigger` - `codeOutput`. 
+Snippets are described by `tabTrigger` - `codeOutput`.
 
 To make things the easiest to remember, snippet triggers are typically named as abbreviations for their output. For example, `tf` outputs (T)he (F)ield.
 
@@ -55,6 +55,7 @@ $imageSize = $image['sizes'][ '*large*' ]; ?>
 | `tsf` | `the_sub_field('*field_name*'); ?>` |
 | `whsf` | `while(has_sub_field('*field_name*')) : ?>` |
 | `ifgsf` | `if(get_sub_field('*field_name*')) : ?>` |
+| `gmsf` | Outputs Google Map Field code for a single location from the options page. |
 
 ### Repeater Field Snippets
 |Snippet|Output|
@@ -106,6 +107,22 @@ if( have_rows(‘*field_name*’)): :
 		</*div*>
 ```
 
+|Snippet|Output|
+|-------|------|
+| `gmf` | Outputs Google Map Field code for a single location: |
+
+```php
+  // ACF Google Map
+  $location = get_field('*1:field_name*', 'options');
+  if( !empty($location) ): ?>
+
+  <div class="acf-map">
+    <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+  </div>
+
+  <?php endif; ?>
+```
+
 ### Options Page Field Snippets
 *These snippets are the same as the standard and repeater snippets, but with an 'o' appended to the end.*
 
@@ -131,6 +148,7 @@ if( have_rows(‘*field_name*’)): :
 |  `tsfo` | `the_sub_field('*field_name*', 'options'); ?>` |
 |  `whsfo` | `while(has_sub_field('*field_name*', 'options')) : ?>` |
 | `ifgsfo` | `if(get_sub_field('*field_name*', 'options')) : ?>` |
+| `gmfo` | Outputs Google Map Field code for a single location from the options page. |
 | `rfo` | Outputs a block of repeater field code from the options page:|
 
 ```php
@@ -142,3 +160,4 @@ if(get_field('*field_name*', 'options')) : ?>
   </*ul*>
 <?php endif; ?>
 ```
+
