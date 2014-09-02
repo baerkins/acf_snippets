@@ -1,16 +1,14 @@
 <snippet>
 	<content><![CDATA[
 // Start Flexible Content
-if( have_rows('${1:field_name}')): :
-	while ( have_rows('${1:field_name}') ) : the_row(); ?>
-
-		<?php
+if( have_rows('${1:field_name}') ) : ?>
+	<?php while ( have_rows('${1:field_name}') ) : the_row();
 
 		// Layout Name: ${2:layout_name}
-		if( get_row_layout() == '${2:layout_field}' ): ?>
-			${4:<div>}
-				<?php the_sub_field('${5:<div>}'); ?>
-			${4:</div>}
+		if( get_row_layout() == '${3:layout_field}' ): ?>
+			<${4:div}>
+				<?php the_sub_field('${5:field_name}'); ?>
+			</${4:div}>
 
 		<?php endif; ?>
 	<?php endwhile; ?>

@@ -1,11 +1,11 @@
 <snippet>
 	<content><![CDATA[
 
-	// Layout Name: ${2:layout_name}
+	// Layout Name: ${1:layout_name}
 	elseif( get_row_layout() == '${2:layout_field}' ): ?>
-		${4:<div>}
-			<?php the_sub_field('${5:<div>}'); ?>
-		${4:</div>}
+		<${3:div}>
+			<?php the_sub_field('${4:field_name}'); ?>
+		</${3:div}>
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
