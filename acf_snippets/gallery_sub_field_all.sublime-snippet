@@ -1,5 +1,6 @@
 <snippet>
 	<content><![CDATA[
+// ACF Image Gallery
 \$images = get_sub_field('${1:field_name}');
 if( \$images ): ?>
   <${2:ul}>
