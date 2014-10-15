@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-get_sub_field('${1:field_name}'); ?>
+get_sub_field('${1:field_name}');
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>gsf</tabTrigger>

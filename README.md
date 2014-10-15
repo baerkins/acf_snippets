@@ -3,7 +3,17 @@ Advanced Custom Fields Snippets for Sublime Text
 
 This is a collection of Sublime Text snippets for the [Advanced Custom Fields](http://www.advancedcustomfields.com/) Wordpress plugin.
 
-## Usage
+## Installation
+
+### Recommended
+
+Install this package with [Package Control](https://sublime.wbond.net/):
+1. Install Package Control in Sublime.
+2. Press `Cmd` + `Shift` + `P` (OSX) or `Ctrl` + `Shift` + `P` (Windows/Linux)
+3. Select Install Package
+4. Search 'ACF Snippets'
+
+### Manual
 
 Copy this folder to the `Packages` folder of your Sublime Text installation.
 

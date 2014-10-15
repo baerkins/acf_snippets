@@ -3,7 +3,7 @@
 // ACF Image Object
 \$image = get_field('image', 'options'); \$alt = \$image['alt'];
 \$imageSize = \$image['sizes'][ '${1:large}' ];
-echo '<img src="' . \$imageSize . '" alt="' . \$alt . '" />'; ?>
+echo '<img src="' . \$imageSize . '" alt="' . \$alt . '" />';
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

@@ -1,9 +1,10 @@
 <snippet>
 	<content><![CDATA[
-if(get_sub_field('${1:field_name}', 'options')) :
+\$date = DateTime::createFromFormat('Ymd', get_field('${1:field_name}'));
+echo \$date->format('d-m-Y');
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>ifgsfo</tabTrigger>
+	<tabTrigger>df</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.php</scope>
 </snippet>
