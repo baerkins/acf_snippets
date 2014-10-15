@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+// Add ACF Menu
+if(function_exists("acf_add_options_page")) {
+  acf_add_options_page();
+}
+
+if(function_exists("register_options_page")) {
+  register_options_page('Global Options');
+  register_options_page('Another Options Page');
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>acfcreateoptions</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php</scope>
+</snippet>

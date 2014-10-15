@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+// ACF Relationship Field
+\$posts = get_sub_field('${1:field_name}');
+if( \$posts ): ?>
+  <${2:ul}>
+  <?php foreach( \$posts as \$post): // variable must be called \$post (IMPORTANT) ?>
+    <?php setup_postdata(\$post); ?>
+    <${3:li}>
+      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+      <p><?php the_excerpt(); ?></p>
+    </${3:li}>
+  <?php endforeach; ?>
+  </${2:ul}>
+  <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+<?php endif;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>relsf</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
