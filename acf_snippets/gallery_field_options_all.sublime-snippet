@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+\$images = get_field('${1:field_name}', 'options');
+if( \$images ): ?>
+  <${2:ul}>
+    <?php foreach( \$images as \$image ): ?>
+      <${3:li}>
+        <a href="<?php echo \$image['url']; ?>">
+          <img src="<?php echo \$image['sizes']['thumbnail']; ?>" alt="<?php echo \$image['alt']; ?>" />
+        </a>
+        <p><?php echo $image['caption']; ?></p>
+      </${3:li}>
+    <?php endforeach; ?>
+  </${2:ul}>
+<?php endif; ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gallof</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
