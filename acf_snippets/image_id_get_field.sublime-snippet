@@ -2,7 +2,7 @@
 	<content><![CDATA[
 \$attachment_id = get_field('${1:field_name}');
 \$size = "${2:full}";
-\$image = wp_get_attachment_image_src( \$attachment_id, \$size ); 
+\$image = wp_get_attachment_image_src( \$attachment_id, \$size );
 ?>
 
 <img src="<?php echo \$image[0]; ?>" />

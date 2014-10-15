@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-while(has_sub_field('${1:field_name}', 'options')) : ?>
+while(has_sub_field('${1:field_name}', 'options')) :
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>whsfo</tabTrigger>
