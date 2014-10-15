@@ -1,0 +1,19 @@
+
+==---------------> ACF SNIPPETS <--------------==
+
+Thanks for installing ACF Snippets!
+
+Please view the README.md file for a list of
+available snippets.
+
+==---------------------------------------------==
+
+Feel free to Fork the snippet repo and submit a
+pull request:
+
+   https://github.com/iamhexcoder/acf_snippets
+
+==---------------------------------------------==
+
+Cheers!
+@baerkins
