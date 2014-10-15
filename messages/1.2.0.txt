@@ -1,0 +1,27 @@
+
+==---------------> ACF SNIPPETS <--------------==
+
+=================================================
+                 Updates in 1.2.0
+=================================================
+
+# New Fields Added!
+- Relationship, Date, and Gallery fields added
+- Two utility snippets were added:
+    `acfcreateoptions`
+    `acffirstrepeater`
+- The Readme.md file has been updated to document
+  these new fields.
+
+# Closing PHP tags were removed from a majority
+  of the snippets
+
+=================================================
+
+      Feel free to contribute to this repo:
+   https://github.com/iamhexcoder/acf_snippets
+
+=================================================
+
+Cheers,
+@baerkins
