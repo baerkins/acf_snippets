@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-\$date = DateTime::createFromFormat('Ymd', get_sub_field('${1:field_name}'));
+\$date = DateTime::createFromFormat( 'Ymd', get_sub_field( '${1:field_name}' ) );
 echo \$date->format('d-m-Y');
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

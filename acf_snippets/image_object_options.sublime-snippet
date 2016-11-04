@@ -1,8 +1,10 @@
 <snippet>
 	<content><![CDATA[
 // ACF Image Object
-\$image = get_field('image', 'options'); \$alt = \$image['alt'];
+\$image     = get_field( 'image', 'options' );
+\$alt       = \$image['alt'];
 \$imageSize = \$image['sizes'][ '${1:large}' ];
+
 echo '<img src="' . \$imageSize . '" alt="' . \$alt . '" />';
 
 ]]></content>

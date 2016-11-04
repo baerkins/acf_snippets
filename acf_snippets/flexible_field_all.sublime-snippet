@@ -1,18 +1,18 @@
 <snippet>
 	<content><![CDATA[
 // Start Flexible Content
-if( have_rows('${1:field_name}') ) : ?>
-	<?php while ( have_rows('${1:field_name}') ) : the_row();
+if ( have_rows( '${1:field_name}' ) ) : ?>
+	<?php while ( have_rows('${1:field_name}' ) ) : the_row();
 
 		// Layout Name: ${2:layout_name}
-		if( get_row_layout() == '${3:layout_field}' ): ?>
+		if ( get_row_layout() == '${3:layout_field}' ) : ?>
 			<${4:div}>
-				<?php the_sub_field('${5:field_name}'); ?>
+				<?php the_sub_field( '${5:field_name}' ); ?>
 			</${4:div}>
 
 		<?php endif; ?>
 	<?php endwhile; ?>
-<?php endif; ?>
+<?php endif;
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>ffall</tabTrigger>

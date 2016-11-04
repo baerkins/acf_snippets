@@ -2,12 +2,12 @@
   <content><![CDATA[
 // Get First Repeater Row
 \$first_row = true;
-if( have_rows('${1:field_name}') ) : ?>
-  while( \$first_row && have_rows('${1:field_name}') ) : the_row(); ?>
-    <${2:div}><?php the_sub_field('${3:sub_field_name}'); ?></${2:div}>
+if ( have_rows( '${1:field_name}' ) ) : ?>
+  <?php while ( \$first_row && have_rows( '${1:field_name}' ) ) : the_row(); ?>
+    <${2:div}><?php the_sub_field( '${3:sub_field_name}' ); ?></${2:div}>
     <?php \$first_row = false;
   endwhile; ?>
-<?php endif; ?>
+<?php endif;
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>acffirstrepeater</tabTrigger>

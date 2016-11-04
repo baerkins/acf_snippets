@@ -1,14 +1,14 @@
 <snippet>
 	<content><![CDATA[
-    // ACF Google Map
-    \$location = get_field('${1:field_name}');
-    if( !empty($location) ): ?>
+// ACF Google Map
+\$location = get_field( '${1:field_name}' );
+if ( ! empty($location) ) : ?>
 
-    <div class="acf-map">
-      <div class="marker" data-lat="<?php echo \$location['lat']; ?>" data-lng="<?php echo \$location['lng']; ?>"></div>
-    </div>
+<div class="acf-map">
+  <div class="marker" data-lat="<?php echo \$location['lat']; ?>" data-lng="<?php echo \$location['lng']; ?>"></div>
+</div>
 
-    <?php endif; ?>
+<?php endif;
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>gmf</tabTrigger>

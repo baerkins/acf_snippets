@@ -1,10 +1,10 @@
 <snippet>
 	<content><![CDATA[
 // ACF Image Gallery
-\$images = get_sub_field('${1:field_name}');
-if( \$images ): ?>
+\$images = get_sub_field( '${1:field_name}' );
+if ( \$images ) : ?>
   <${2:ul}>
-    <?php foreach( \$images as \$image ): ?>
+    <?php foreach ( \$images as \$image ) : ?>
       <${3:li}>
         <a href="<?php echo \$image['url']; ?>">
           <img src="<?php echo \$image['sizes']['thumbnail']; ?>" alt="<?php echo \$image['alt']; ?>" />
@@ -13,7 +13,7 @@ if( \$images ): ?>
       </${3:li}>
     <?php endforeach; ?>
   </${2:ul}>
-<?php endif; ?>
+<?php endif;
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>gallsf</tabTrigger>

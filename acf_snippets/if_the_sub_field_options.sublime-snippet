@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-if(the_sub_field('${1:field_name}', 'options')) :
+if ( the_sub_field( '${1:field_name}', 'options' ) ) :
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>iftsfo</tabTrigger>

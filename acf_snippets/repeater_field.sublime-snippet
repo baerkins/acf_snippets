@@ -1,12 +1,12 @@
 <snippet>
 	<content><![CDATA[
-if( have_rows('${1:field_name}') ) : ?>
+if ( have_rows( '${1:field_name}' ) ) : ?>
 	<${2:ul}>
-		<?php while( have_rows('${1:field_name}') ) : the_row(); ?>
-			<${3:li}><?php the_sub_field('${4:sub_field_name}'); ?></${3:li}>
+		<?php while ( have_rows( '${1:field_name}' ) ) : the_row(); ?>
+			<${3:li}><?php the_sub_field( '${4:sub_field_name}' ); ?></${3:li}>
 		<?php endwhile; ?>
 	</${2:ul}>
-<?php endif; ?>
+<?php endif;
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>rf</tabTrigger>

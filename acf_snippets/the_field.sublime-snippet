@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-the_field('${1:field_name}');
+the_field( '${1:field_name}' );
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>tf</tabTrigger>

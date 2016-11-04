@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-the_sub_field('${1:field_name}', 'options');
+the_sub_field( '${1:field_name}', 'options' );
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>tsfo</tabTrigger>

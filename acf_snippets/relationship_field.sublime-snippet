@@ -1,11 +1,11 @@
 <snippet>
 	<content><![CDATA[
 // ACF Relationship Field
-\$posts = get_field('${1:field_name}');
-if( \$posts ): ?>
+\$posts = get_field( '${1:field_name}' );
+if ( \$posts ) : ?>
   <${2:ul}>
-  <?php foreach( \$posts as \$post): // variable must be called \$post (IMPORTANT) ?>
-    <?php setup_postdata(\$post); ?>
+  <?php foreach ( \$posts as \$post) : // variable must be called \$post (IMPORTANT) ?>
+    <?php setup_postdata( \$post ); ?>
     <${3:li}>
       <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
       <p><?php the_excerpt(); ?></p>

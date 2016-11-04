@@ -2,9 +2,9 @@
 	<content><![CDATA[
 
 	// Layout Name: ${1:layout_name}
-	elseif( get_row_layout() == '${2:layout_field}' ): ?>
+	elseif ( get_row_layout() == '${2:layout_field}' ) : ?>
 		<${3:div}>
-			<?php the_sub_field('${4:field_name}'); ?>
+			<?php the_sub_field( '${4:field_name}' ); ?>
 		</${3:div}>
 
 ]]></content>
