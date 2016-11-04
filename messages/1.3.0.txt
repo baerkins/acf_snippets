@@ -10,8 +10,6 @@ Snippets now meet (WordPress space standards)[https://make.wordpress.org/core/ha
 Thanks to @davemac for the suggestion and prompting
 me to get proper.
 
-
-
 =================================================
 
       Feel free to contribute to this repo:
